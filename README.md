@@ -26,8 +26,7 @@ Playbook Example
 ----------------
 
 ```yml
-# python.yml
-- name: "Install python"
+- name: "Setup resolv.conf"
   hosts: all
   roles:
     - ball6847.role.resolvconf
