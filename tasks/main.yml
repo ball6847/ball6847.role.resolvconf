@@ -1,0 +1,10 @@
+---
+- name: "Add entries to {{ resolv_file_location }}"
+  lineinfile:
+    path: "{{ resolv_file_location }}"
+    # regex: "^nameserver {{ item }}"
+    line: "nameserver {{ item }}"
+  with_items:
+    - "{{ resolv_nameserver }}"
+  notify:
+    - update resolvconf

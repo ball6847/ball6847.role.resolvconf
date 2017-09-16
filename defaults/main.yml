@@ -1,0 +1,8 @@
+resolv_nameserver:
+  - 8.8.8.8
+  - 8.8.4.4
+
+resolv_file_location: /etc/resolvconf/resolv.conf.d/head
+
+# if you want to append instead of prepend, use this file instead
+# resolv_file_location: /etc/resolvconf/resolv.conf.d/base
